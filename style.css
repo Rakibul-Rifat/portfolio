@@ -187,7 +187,11 @@ h2{
   font-size: 30px;
   line-height: 10px;
 }
-p, h5{
+p{
+  margin-left: 20px;
+  color: #080808;
+}
+h5{
    font-family: "Trirong", serif;
   margin-left: 20px;
   color: #080808;
@@ -386,7 +390,7 @@ p,h2,a, .button1{
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       margin: 10px;
       width: 360px;
-      height: 500px;
+      height: 400px;
       margin-top: 50px;
     }
    }
