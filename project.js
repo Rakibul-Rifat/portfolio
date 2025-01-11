@@ -51,4 +51,4 @@ function showSlides() {
     slides[slideIndex - 1].style.display = 'block';
 
     // Repeat after 2 sec (2000ms)
-    setTimeout(showSlides, 4000);}
+    setTimeout(showSlides, 3000);}
