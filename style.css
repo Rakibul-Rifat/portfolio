@@ -15,6 +15,7 @@ ul {
 }
 
 a {
+  text-shadow: 3px 3px 3px #ababab;
   text-decoration: none;
 }
 
@@ -179,6 +180,7 @@ h1{
 }
 h2{
      font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
   margin-left: 20px;
   margin-right: 80px;
   color: #080808;
