@@ -168,6 +168,7 @@ margin-bottom: 60px;
 
 }
 h1{
+   font-family: "Trirong", serif;
   background-color: #080808;
   font-size: small;
   color: #ffffff;
@@ -177,17 +178,20 @@ h1{
   
 }
 h2{
+     font-family: "Sofia", sans-serif;
   margin-left: 20px;
   margin-right: 80px;
   color: #080808;
   font-size: 30px;
   line-height: 10px;
 }
-p{
+p, h5{
+   font-family: "Trirong", serif;
   margin-left: 20px;
   color: #080808;
 }
 .button1{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #ffffff;
   width: 120px;
   height: 40px;
@@ -195,6 +199,7 @@ p{
   margin-left: 20px;
 }
 .button2{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #100101;
   color: white;
   width: 120px;
@@ -203,6 +208,7 @@ p{
   margin-left: 20px;
 }
 .button3{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #ffffff;
   width: 120px;
   height: 40px;
@@ -227,6 +233,7 @@ hr{
   background-color: #080808;
 }
 a{
+   font-family: "Trirong", serif;
   margin-left: 20px;
   font-size: 15px;
   color: #080808;
@@ -288,6 +295,7 @@ p,h2,a, .button1{
     margin-bottom: 10px;
   }
   h4{
+    font-family: "Trirong", serif;
     text-align: start;
     margin-left: 20px;
   }
@@ -302,6 +310,7 @@ p,h2,a, .button1{
   border: 2px, solid black;
   }
   button{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: 30px;
     background-color: #94c898;
     width: 120px;
