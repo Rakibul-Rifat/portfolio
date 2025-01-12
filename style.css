@@ -309,7 +309,7 @@ p,h2,a, .button1{
     margin-left: 30px;
      background-color: rgba(250, 253, 253, 0.388);
     line-height: 5px;
-   width: 300px;
+   width: 250px;
    height: 30px;
   margin-top: 10px;
   color: #0d0d0d;
@@ -329,7 +329,7 @@ p,h2,a, .button1{
   }
   .message{
     text-align: start;
-    height: 100px;
+    height: 60px;
   }
   fieldset{
     border: 2px, solid black;
