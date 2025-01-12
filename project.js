@@ -52,3 +52,14 @@ function showSlides() {
 
     // Repeat after 2 sec (2000ms)
     setTimeout(showSlides, 3000);}
+
+//this part is simple user input form related javascript function
+    function getText(){
+
+var a = document.getElementById("name").value
+var b = document.getElementById("email").value
+var c = document.getElementById("subject").value
+var d = document.getElementById("message").value
+ document.getElementById("demo2").innerHTML =  "Hello! " + a+ ', ' + b + "<br>" + c + "<br>" + d + "<br>"+"<br>" +  "[Thank you, Your information has been submitted.] ";
+  console.log();
+  }
