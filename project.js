@@ -63,9 +63,4 @@ var d = document.getElementById("message").value
  document.getElementById("demo2").innerHTML =  "Hello! " + a + ', ' + b + "<br>"+ "<br>" +  "[ Thank you, Your message has been submitted.] ";
   console.log();
   }
-$(document).ready(function() {
-    //carousel options
-    $('#quote-carousel').carousel({
-      pause: true, interval: 2000,
-    });
-  });
+
