@@ -60,6 +60,6 @@ var a = document.getElementById("name").value
 var b = document.getElementById("email").value
 var c = document.getElementById("subject").value
 var d = document.getElementById("message").value
- document.getElementById("demo2").innerHTML =  "Hello! " + a+ ', ' + b + "<br>" + c + "<br>" + d + "<br>"+"<br>" +  "[Thank you, Your information has been submitted.] ";
+ document.getElementById("demo2").innerHTML =  "Hello! " + a + ', ' + b + "<br>"+ "<br>" +  "[ Thank you, Your message has been submitted.] ";
   console.log();
   }
