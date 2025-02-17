@@ -1,206 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 <body>
-
-  <div class="container1">
-    <div class="box1">
-      <nav> 
-        <div class="nav-main">
-          <div class="nav-header">
-            <h1>Portfolio</h1>
-            <i class="fa fa-bars"></i>
-          </div  >
-          <ul class="menu">
-            <li>
-              <a href="#"><h5>Home</h5></a>
+  <div class="container">
+    <nav style="background-color: rgb(242,242,237);" class="navbar navbar-expand-lg bg-transparent fixed-top ">
+      <div class="container-fluid">
+       <h3 class="rounded-5 brandlogo " style="color: rgb(3, 255, 15);">Portfolio</h3>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="background-color: rgb(9, 255, 0);" class="navbar-toggler-icon rounded-2"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav  mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a    class="nav-link active me-5 text-white" aria-current="page" href="#">Home</a>
             </li>
-            <li>
-               <a href="#section1"><h5>About</h5></a>
+            <li class="nav-item">
+              <a   class="nav-link active me-5 text-white" aria-current="page" href="#">About</a>
             </li>
-            <li>
-              <a href="#"><h5>Team</h5></a>
+            <li class="nav-item">
+              <a  class="nav-link active customer text-white" aria-current="page" href="#">Project</a>
             </li>
-            <li>
-              <a href="#"><h5>Project</h5></a>
-            </li>
-            <li>
-             <a href="#section2"><h5>Contact</h5></a>
-            </li>
-          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn btnStartfree " type="submit">Contact</button>
+          </form>
         </div>
-      </nav>
-      <br>
-      <h4 wb-animate-text="scale-in" class="h1">Hello, It's me</h4>
-      <h2 wb-animate-text="side-elastic-reveal" class="h1">Rakibul Rifat</h2>
-      <a>And I'm a <span id="typing"></span></a>
-      <br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veniam, voluptas explicabo esse maxime rerum ullam suscipit laborum eligendi error quis officiis neque id! Repellat dolore amet sed laborum assumenda!</p>
-<br>
-<button class="button1"> Get a Quate</button><button class="button2"> Contact To Me</button><br>
-
-<box-icon type='logo' name='facebook-square'></box-icon>
-  <box-icon type='logo' name='github'></box-icon>
-  
-<box-icon type='logo' name='twitter'></box-icon>
-  <box-icon type='logo' name='instagram'></box-icon>
-  <box-icon type='logo' name='whatsapp'></box-icon>
-
-    </div>
-    <div class="box2"><h1>
-
-
-
-
-
-    </div>
-  </div>
-    <div class="container2">
-      <div class="box3">
-         <h2 wb-animate-text="bounce-in" class="h1">About Me</h2>
-        <h4>Web designer and Frontend developer</h4>
-          <p>Sad do eiusmod tempor incidiunt ut gelo lbore et lodore magna ahlfhe, ehfhe ipd uj relshudff. Sad do eiusmod tempor incidiunt ut lbore et lodore magna ahlfhe, hehhh ehfhe ipd uj relshudff. Sad do eiusmod tempor incidiunt ut lbore et lodore magna ahlfhe, ehfhe ipd uj relshudff.</p>
-          <button class="button3" onclick="typeWriter()"> More About Me</button>
-          <p id="demo"></p>
-      <h4>Email - rakibul.rifat44@gmail.com</h4>
-      <h4>Phone No - 01618085195</h4>
-    </div>
-      
-      <div class="box4"><h1>
-        <h2 wb-animate-text="fade-in-from-left" class="h1 overflow-hidden" id="section2">Contact To Me</h2>
-        <h4>Let's work together</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum adipisci excepturi in, voluptate tenetur laboriosam placeat voluptatum dolor similique earum quisquam accusantium exercitationem. Consectetur expedita illo autem obcaecati rem iusto.</p>
-              
-        <!--this part is simple user input form-->
-        <input type="text" placeholder="Write your name" id="name">
-      <input type="text" placeholder="Email or Number" id="email">
-      <br>
-      <input type="text" placeholder="write subject" id="subject">
-      <br>
-      <input class="message" type="text" placeholder="write message" id="message">
-      <br><br>
-      <button onclick='getText()' type="button">Submit</button>
-      <br>
-      <p id ='demo2' ></p>
-      <br>
-</div>
-</div>
-      <div class="container2">
-        <div class="box5">
-          <div class="slideshow">
-            <div class="image__container">
-                <img src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?t=st=1735307499~exp=1735311099~hmac=eec8bf6381c9e782979c4a5025900c9c61ec562b96b73684271935ae08d41c13&w=740" alt="Indoor">       
-            </div>
-            <div class="image__container">
-                <img src="https://img.freepik.com/free-vector/pair-programming-concept-illustration_114360-2170.jpg?t=st=1735307535~exp=1735311135~hmac=fd654328a720414884c2b1fca08deba5dad63e103af95b40b377f4e28dca111b&w=740" alt="Indoor">        
-            </div>
-            <div class="image__container">
-                <img src="https://img.freepik.com/free-vector/developer-activity-concept-illustration_114360-2801.jpg?t=st=1735307576~exp=1735311176~hmac=ff82177500a73da0e8655d744c9a406bac022ebf6c52c422f88860fe51fadb0c&w=740" alt="Indoor">        
-            </div>
-        </div>
-  </div>
-      
-        <div id="section2" class="box6">
-          <h2 wb-animate-text="stagger-from-bottom" class="h1 overflow-hidden">Details</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quibusdam, cumque tempora illo expedita accusamus natus officia quidem quam odio reiciendis voluptatibus facilis laudantium blanditiis? Nostrum eos quam accusamus quis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores deserunt itaque cum quasi corporis, quam sint soluta ad, voluptate ipsam, eius earum totam voluptatem dolor laudantium iste fugiat. Quis, saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni porro facere nesciunt id. Tenetur necessitatibus, deleniti, veritatis earum alias vel expedita eaque minima culpa rerum unde eveniet nam non voluptate?</p>
-        </div>
-     <!-- Testimonial List -->
-  <div class="bodyy">
-    <div class="testimonial-slider">
-      <h4 class="client"> What Our Clients Say</h4>
-      <div class="testimonial-list" role="region" aria-label="Testimonials">
-        <div class="testimonial">
-          <!-- Bootstrap Icon -->
-          <i class="bi bi-quote"></i>
-
-          <blockquote>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
-            nemo quo, molestias placeat sunt dignissimos nulla. Omnis
-            consectetur aliquam ab incidunt!
-          </blockquote>
-
-          <!-- User Info -->
-          <div class="user-info">
-            <img src="https://placehold.co/48?text=1" alt="" />
-            <div class="user-details">
-              <p class="name">John Doe</p>
-              <p class="company">CEO, Company XYZ</p>
-            </div>
-          </div>
-        </div>
-        <!-- /Testimonial -->
-        <div class="testimonial">
-          <!-- Bootstrap Icon -->
-          <i class="bi bi-quote"></i>
-
-          <blockquote>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
-            nemo quo, molestias placeat sunt dignissimos nulla. Omnis
-            consectetur aliquam ab incidunt!
-          </blockquote>
-
-          <!-- User Info -->
-          <div class="user-info">
-            <img src="https://placehold.co/48?text=2" alt="" />
-            <div class="user-details">
-              <p class="name">John Doe</p>
-              <p class="company">CEO, Company XYZ</p>
-            </div>
-          </div>
-        </div>
-        <!-- /Testimonial -->
-        <!-- Testimonial -->
-        <div class="testimonial">
-          <!-- Bootstrap Icon -->
-          <i class="bi bi-quote"></i>
-
-          <blockquote>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
-            nemo quo, molestias placeat sunt dignissimos nulla. Omnis
-            consectetur aliquam ab incidunt!
-          </blockquote>
-
-          <!-- User Info -->
-          <div class="user-info">
-            <img src="https://placehold.co/48?text=2" alt="pic" />
-            <div class="user-details">
-              
-              <p class="name">John Doe</p>
-              <p class="company">CEO, Company XYZ</p>
-            </div>
-          </div>
-        </div>
-        <!-- /Testimonial -->
       </div>
-      <!-- /Testimonial List -->
-      <!-- Dot Navigation -->
-      <div class="dots-container"></div>
-      <!-- /Dot Navigation -->
-    </div>
-    </div>
+    </nav>
+    <!-- =======section1===== -->
+    <div class="section1 mt-5">
+      <div class="row text-center ">
+           <div class="col-sm-6 mt-5">
+            <h4 wb-animate-text="scale-in" class="text-white mt-5 agdasima-regular">Hello, It's me</h4>
+      <h2 wb-animate-text="side-elastic-reveal" class="text-white agdasima-regular">Rakibul Rifat</h2>
+      <p class="text-white">And I'm a <span id="typing"></span></p>
+      <br>
+      <p class="text-white m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veniam, voluptas explicabo esse maxime rerum ullam suscipit laborum eligendi error quis officiis neque id! Repellat dolore amet sed laborum assumenda!</p>
 <br>
-<footer class="icon">
-  <a> <span id="typed2"></span></a><br>
-  <a href="facebook.com/rakibul.rifat44/"><box-icon type='logo' name='facebook-square'></box-icon>
-  <a href="https://github.com/Rakibul-Rifat"><box-icon type='logo' name='github'></box-icon>
-  <box-icon type='logo' name='twitter'></box-icon>
-  <box-icon type='logo' name='instagram'></box-icon>
-  <box-icon type='logo' name='whatsapp'></box-icon>
+<button class="btn btn btnglow me-5 text-white"> Get a Quate</button><button class="btn btn btnglow text-white "> Contact To Me</button><br>
+<div class="mt-5">
+  <box-icon class="bg-white rounded-2" type='logo' name='facebook-square'></box-icon>
+  <box-icon class="bg-white rounded-2" type='logo' name='github'></box-icon>
+<box-icon class="bg-white rounded-2" type='logo' name='twitter'></box-icon>
+  <box-icon class="bg-white rounded-2" type='logo' name='instagram'></box-icon>
+  <box-icon class="bg-white rounded-2" type='logo' name='whatsapp'></box-icon>
+</div>
+           </div>
+           <div class="col-sm-6 profilepic fade-in"></div>
+      </div>
+      </div>
+  <!-- =======section2===== -->
+   <div class="section2">
+    <div class="container">
+      <div class="row">
+           <div class="col-sm-6">
+            <h2 wb-animate-text="bounce-in" id="section1" class="mt-5 text-white">About Me</h2>
+        <h4 class="text-white">Web designer and Frontend developer</h4>
+          <p class="text-white">Sad do eiusmod tempor incidiunt ut gelo lbore et lodore magna ahlfhe, ehfhe ipd uj relshudff. Sad do eiusmod tempor incidiunt ut lbore et lodore magna ahlfhe, hehhh ehfhe ipd uj relshudff. Sad do eiusmod tempor incidiunt ut lbore et lodore magna ahlfhe, ehfhe ipd uj relshudff.</p>
+          <button class="btn btn btnglow text-white" onclick="typeWriter()"> More About Me</button>
+          <p class="text-white" id="demo"></p>
+      <h4 class="text-white">Email - rakibul.rifat44@gmail.com</h4>
+      <h4 class="text-white">Phone No - 01618085195</h4>
+           </div>
+           <div class="col-sm-6 mt-5">
+            <h2 wb-animate-text="fade-in-from-left" class="text-white" id="section2"> Contact To Me</h2>
+        <h4 class="text-white">Let's work together</h4>
+        <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum adipisci excepturi in, voluptate tenetur laboriosam placeat voluptatum dolor similique earum quisquam accusantium exercitationem. Consectetur expedita illo autem obcaecati rem iusto.</p>
+                <!--this part is simple user input form-->
+        <input class="form-control " type="text" placeholder="Write your name" id="name"> <br>
+      <input class="form-control" type="text" placeholder="Email or Number" id="email">
+      <br>
+      <input class="form-control" type="text" placeholder="write subject" id="subject">
+      <br>
+      <input class="form-control" class="message" type="text" placeholder="write message" id="message">
+      <br><br>
+      <button class="btn btn btnglow text-white" onclick='getText()' type="button">Submit</button>
+      <br>
+      <p class="text-success" id ='demo2' ></p>
+           </div>
+      </div>
+      </div>
+   </div>
+<div class="section3">
+  <div class="container">
+    <div class="row">
+         <div class="col-sm-6 mt-5">
+          <h2 wb-animate-text="stagger-from-bottom" class="text-white">Details</h2>
+          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quibusdam, cumque tempora illo expedita accusamus natus officia quidem quam odio reiciendis voluptatibus facilis laudantium blanditiis? Nostrum eos quam accusamus quis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores deserunt itaque cum quasi corporis, quam sint soluta ad, voluptate ipsam, eius earum totam voluptatem dolor laudantium iste fugiat. Quis, saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni porro facere nesciunt id. Tenetur necessitatibus, deleniti, veritatis earum alias vel expedita eaque minima culpa rerum unde eveniet nam non voluptate?</p>
+        <!-- =======testimonial===== -->
+         </div>
+         <div class="col-sm-6">
+          <div class="bodyy">
+            <div class="testimonial-slider">
+              <h4 wb-animate-text="scale-in" class="client mt-3"> What Our Clients Say</h4>
+              <div class="testimonial-list" role="region" aria-label="Testimonials">
+                <div class="testimonial">
+                  <!-- Bootstrap Icon -->
+                  <i class="bi bi-quote"></i>
+        
+                  <blockquote class="text-white mt-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
+                    nemo quo, molestias placeat sunt dignissimos nulla. Omnis
+                    consectetur aliquam ab incidunt!
+                  </blockquote>
+        
+                  <!-- User Info -->
+                  <div class="user-info">
+                    <img src="https://placehold.co/48?text=1" alt="" />
+                    <div class="user-details">
+                      <p class="text-white">John Doe</p>
+                      <p class="text-white">CEO, Company XYZ</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Testimonial -->
+                <div class="testimonial">
+                  <!-- Bootstrap Icon -->
+                  <i class="bi bi-quote"></i>
+        
+                  <blockquote class="text-white mt-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
+                    nemo quo, molestias placeat sunt dignissimos nulla. Omnis
+                    consectetur aliquam ab incidunt!
+                  </blockquote>
+        
+                  <!-- User Info -->
+                  <div class="user-info">
+                    <img src="https://placehold.co/48?text=2" alt="" />
+                    <div class="user-details">
+                      <p class="text-white" >John Doe</p>
+                      <p class="text-white" >CEO, Company XYZ</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Testimonial -->
+                <!-- Testimonial -->
+                <div class="testimonial">
+                  <!-- Bootstrap Icon -->
+                  <i class="bi bi-quote"></i>
+        
+                  <blockquote class="text-white mt-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                    quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
+                    nemo quo, molestias placeat sunt dignissimos nulla. Omnis
+                    consectetur aliquam ab incidunt!
+                  </blockquote>
+        
+                  <!-- User Info -->
+                  <div class="user-info">
+                    <img src="profile_pic.jpg" alt="pic" />
+                    <div class="user-details">
+                      
+                      <p class="text-white" >John Doe</p>
+                      <p class="text-white">CEO, Company XYZ</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Testimonial -->
+              </div>
+              <!-- /Testimonial List -->
+              <!-- Dot Navigation -->
+              <div class="dots-container"></div>
+              <!-- /Dot Navigation -->
+            </div>
+            </div>
+</div>
+</div>
+<!-- =======footer====== -->
+<footer class="icon text-center m-3">
+  <a> <span class="text-white" id="typed2"></span></a><br>
+  <a href="facebook.com/rakibul.rifat44/"><box-icon class="bg-white rounded-2 " type='logo' name='facebook-square'></box-icon>
+  <a href="https://github.com/Rakibul-Rifat"><box-icon class="bg-white rounded-2 " type='logo' name='github'></box-icon>
+  <box-icon class="bg-white rounded-2 mt-3" type='logo' name='twitter'></box-icon>
+  <box-icon class="bg-white rounded-2 mt-3" type='logo' name='instagram'></box-icon>
+  <box-icon class="bg-white rounded-2 mt-3" type='logo' name='whatsapp'></box-icon>
       </footer>
-<script src="https://cdn.jsdelivr.net/gh/learyjk/animate-text@1.0.3/dist/wb-animateText.min.js"></script>
-<script src="project.js"></script>
+
+
+
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/learyjk/animate-text@1.0.3/dist/wb-animateText.min.js"></script>
+  <script src="project.js"></script>
 </body>
 </html>
