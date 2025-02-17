@@ -1,423 +1,123 @@
-body {
+.agdasima-regular {
+  font-family: "Agdasima", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.agdasima-bold {
+  font-family: "Agdasima", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+*{
   margin: 0;
-  padding: 0;
-  text-decoration: 0;
-  list-style: none;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  background-color: #ffffff;
-  line-height: 2;
-  font-size: 0.875rem;
-
+  border: 0;
+  font-family: none;
 }
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-shadow: 3px 3px 3px #ababab;
-  text-decoration: none;
-}
-
-nav {
-  background-color: #ffffff;
-  
-  transition: 0.4s;
-  width: 100%;
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-  
-}
-
-.fa-bars {
-  font-size: 1.5rem;
-  color: #080808;
-  cursor: pointer;
-}
-
-.fa-bars:hover {
-  color: black;
-}
-
-.menu a {
-  color: rgb(23, 1, 1);
-  letter-spacing: 0.1rem;
-  display: block;
-  padding: 0.5rem 1rem;
-  transition: all 0.1s linear;
-  text-align: left;
-  
-}
-
-.menu a:hover {
-  background: #c331a642;
-  color: #e94949;
-  padding-left: 1.5rem;
-}
-
-.menu {
-  height: 0px;
-  overflow: hidden;
-  transition: all 0.9s linear;
-}
-
-.show-menu {
-  height: 280px;
-  line-height: 10px;
-}
-
-.nav-header {
-  height: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-}
-@media (min-width: 600px) {
-  .nav-main {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-
-
-.nav-header {
-  padding: 0;
-}
-.fa-bars {
-  display: none;
-}
-
-.menu {
-  height: auto;
-  display: flex;
-}
-
-.menu a {
-  padding: 0;
-  margin: 0 0.5rem;
-}
-.menu a:hover {
-  padding: 0;
-  background: transparent;
-}
-
-}
-
-
-
-.container1{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.box1{
-  background-color: #ffffff;
-width: 400px;
-height: 600px;
-flex: 50%;
-flex-grow: 1;
-flex-basis: 300px;
-margin-left: 30px;
-margin-right: 30px;
-
-}
-.box2{
-
-background-image: url(https://raw.githubusercontent.com/Rakibul-Rifat/portfolio/7be1708bd3bc0eb533268e994496b8a9838c0d9d/profile_picture.jpg);
-background-position: center;
+body{
+  background-image: url(https://cliply.co/wp-content/uploads/2019/06/401906190_ITS_COMPLICATED_400px.gif);
+background-repeat: no-repeat;
 background-size: cover;
-
-width: 400px;
-height: 400px;
-flex: 50%;
-flex-grow: 1;
-flex-basis: 300px;
-margin-top: 60px;
-margin-bottom: 60px;
-
 }
-.container2{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.navbar{
+backdrop-filter: blur(3.5px);
 }
-.box3{
-  background-color: #ffffff;
-  width: 400px;
-  height: 600px;
-  flex: 50%;
-  flex-grow: 1;
-  flex-basis: 300px;
-  margin-left: 30px;
-  margin-right: 30px;
-
-  
+.navbar-nav{
+  margin-left: auto;
 }
-.box4{
-  background-color: #ffffff;
-  height: 600px;
-  flex: 50%;
-  flex-grow: 1;
-  flex-basis: 300px;
-  margin-left: 30px;
-  margin-right: 30px;
-
+li a{
+  color: aliceblue;
+  background-color: antiquewhite;
 }
-h1{
-   font-family: "Trirong", serif;
-  background-color: #080808;
-  font-size: small;
-  color: #ffffff;
-  width: 100px;
-  text-align: center;
-  border-radius: 4px;
-  
-}
-h2{
-     font-family: "Sofia", sans-serif;
-    text-shadow: 3px 3px 3px #ababab;
-  margin-left: 20px;
-  margin-right: 80px;
-  color: #080808;
-  font-size: 30px;
-  line-height: 10px;
-}
-p{
-  margin-left: 20px;
-  color: #080808;
-}
-h5{
-   font-family: "Trirong", serif;
-  margin-left: 20px;
-  color: #080808;
-}
-.button1{
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #ffffff;
-  width: 120px;
-  height: 40px;
-  border-radius: 4%;
-  margin-left: 20px;
-}
-.button2{
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #100101;
-  color: white;
-  width: 120px;
-  height: 40px;
-  border-radius: 4%;
-  margin-left: 20px;
-}
-.button3{
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #ffffff;
-  width: 120px;
-  height: 40px;
-  border-radius: 4%;
-  margin-left: 20px;
-}
-.button1:hover {
-  background-color: #04AA6D;
-  color: white;
-}
-.button2:hover {
-  background-color: #6182a3;
-  color: white;
-}
-.button3:hover {
-  background-color: #04AA6D;
-  color: white;
-}
-hr{
-  margin-left: 30px;
-  
-  background-color: #080808;
-}
-a{
-   font-family: "Trirong", serif;
-  margin-left: 20px;
-  font-size: 15px;
-  color: #080808;
-}
-@media (max-width: 500px) {
-  .box1{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 360px;
- margin: 10px;
+  .hover:hover{
+    transform: scale(1.1,1.1);
   }
-  .box2{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 10px;
-    width: 360px;
+  .fade-in {
+    animation: fadeIn ease 8s;
   }
-  .box3{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 10px;
-    width: 360px;
-    height: 500px;
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
   }
-  .box4{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 10px;
-    height: 800px;
-    width: 360;
- 
- 
-  }
-  .title{
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 20px;
-  }
-  h4{
-    margin-left: 20px;
-}
-p,h2,a, .button1{
-  text-align: start;
-  margin-left: 20px;
-}
-
-}
-.title{
-  margin-top: 0;
-  }
-  .gap{
-    padding: 40px;
-    background-color: #ffffff;
-  }
-  h5{
-    font-weight: 10px;
-    line-height: 1px;
-  }
-  box-icon{
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-  }
-  h4{
-    font-family: "Trirong", serif;
-    text-align: start;
-    margin-left: 20px;
-  }
-  input{
-    margin-left: 30px;
-     background-color: rgba(250, 253, 253, 0.388);
-    line-height: 5px;
-   width: 250px;
-   height: 30px;
-  margin-top: 10px;
-  color: #0d0d0d;
-  border: 2px, solid black;
-  }
-  button{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left: 30px;
-    background-color: #94c898;
-    width: 120px;
-    height: 40px;
-    border-radius: 4%;
-  }
-  button:hover {
-    background-color: #04AA6D;
-    color: white;
-  }
-  .message{
-    text-align: start;
-    height: 60px;
-  }
-  fieldset{
-    border: 2px, solid black;
-    border-radius: 5%;
-  }
-  legend{
-    text-align: start;
-  }
-  footer{
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+  .loader {
     text-align: center;
-    height: 80px;
-    background-color: #14131300;
-    width: 100%;
-    color: #efeded;
-  }
-  html{
-    scroll-behavior: smooth;
-  }
-  .container3{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .box5{
-    background-color: #ffffff;
-   
-    height: 400px;
-    flex: 50%;
-    flex-grow: 1;
-    flex-basis: 300px;
-    margin-left: 30px;
-    margin-right: 30px;
-  
-    
-  }
-  .box6{
-    background-color: #ffffff;
-   text-align: start;
-    height: 400px;
-    flex: 50%;
-    flex-grow: 1;
-    flex-basis: 300px;
-   
-    margin-right: 30px;
-  
-  }
-  @media (max-width: 500px) {
-  .box5{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 10px;
-    width: 360px;
-    height: 360px;
+      animation: spin 1s linear ;
     }
-    .box6{
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      margin: 10px;
-      width: 360px;
-      height: 400px;
-      margin-top: 50px;
-    }
-   }
-   .slideshow {
-    position: relative;
-    animation: fadeInFromLeft 1.5s ease;
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
+  /***** Slide right*****/
+.slide-right {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+ /***** Slide Left *****/
+ .slide-left {
+  animation: 3s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+.customer{
+  margin-right: 100px;
+}
+.navbar-brand{
+  width: 55px;
+  height: 50px;
+}
+.brandlogo{
+  margin-left: 70px;
   
-  .image__container img {
-    animation: fadeInSlideshow 1s ease-in-out;
-    height: 400px;
-    width: 100%;
-    border-radius: 10px;
-    
-    background-position: center;
-    background-size: cover;
-  }
-  
-  @keyframes fadeInSlideshow {
-    from {
-        opacity: 0.5;
-    }
-    to {
-        opacity: 1;
-    }
-  }
-/*this part is for testimonial slider animation*/
+}
+.textcolor{
+  color: rgb(3, 255, 15);
+}
+.btnStartfree{
+  background-color: rgb(3, 255, 15);
+  border-radius: 50px;
+  margin-right: 50px;
+  color: rgb(0, 0, 0);
+}
+.profilepic{
+background-image: url(https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Image.png);
+  background-size: 380px 300px;
+  background-position: center;
+  backdrop-filter: blur(2.5px);
+  background-repeat: no-repeat;
+}
+.form-control{
+  background-color: transparent;
+  border-color: blue;
+}
+@media only screen and (max-width:
+ 600px) {
+ .testimonial-slider{
+  min-width: 100%;
+ }
+ .brandlogo{
+  margin-left: 20px;
+ }
+ }
+  /*this part is for testimonial slider animation*/
 .bodyy {
   display: grid;
   place-items: center;
@@ -425,26 +125,28 @@ p,h2,a, .button1{
 }
 .client {
   text-align: center;
-  color: var(--paynes-gray);
+  color: white;
+}
+blockquote{
+  color: white;
 }
 .testimonial-slider {
-  background-color: #8db4da;
-  height: 350px;
-  width: 20px;
+  backdrop-filter: blur(3.5px);
   line-height: 20px;
   text-align: center;
-  width: 40%;
- backdrop-filter: blur(50px);
+  width: 80%;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
+  background-color: rgba(37, 36, 97, 0.308);
 }
 .testimonial-list {
   display: flex;
   overflow: hidden;
 }
 .testimonial {
+  background-image: url();
   flex: 1 0 100%;
   text-align: center;
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -514,13 +216,9 @@ p,h2,a, .button1{
     opacity: 1;
   }
 }
-@media (max-width: 500px) {
-.bodyy{
-  margin: 0px 0px 0px 0px;
 
-}
-.testimonial-slider {
-  height: 360px;
-  width: 80%;
-}
+.btnglow{
+  border-radius: 1000px;
+  background-color: #0400ff9f;
+  box-shadow: 0 4px 8px 0 rgba(12, 4, 233, 0.353), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
