@@ -20,6 +20,7 @@ body{
   background-image: url(https://cliply.co/wp-content/uploads/2019/06/401906190_ITS_COMPLICATED_400px.gif);
 background-repeat: no-repeat;
 background-size: cover;
+  background-attachment: fixed;
 }
 .navbar{
 backdrop-filter: blur(3.5px);
