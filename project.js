@@ -13,7 +13,7 @@ function typeWriter() {
 };
 
 var typed = new Typed('#typing', {
-  strings: ['Web Designer ', '&' ,'Frontend Developer.'],
+  strings: ['Web Designer ', '&' ,'Frontend Web Developer.'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 100,
