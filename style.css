@@ -17,8 +17,7 @@
   font-family: none;
 }
 body{
-  background-color: rgb(1, 1, 58);
-  background-image: url(https://cliply.co/wp-content/uploads/2019/06/401906190_ITS_COMPLICATED_400px.gif);
+ background-color: rgb(6, 38, 72);
 background-repeat: no-repeat;
 background-size: cover;
   background-attachment: fixed;
@@ -106,6 +105,11 @@ background-image: url(https://www.pngall.com/wp-content/uploads/5/User-Profile-P
   backdrop-filter: blur(2.5px);
   background-repeat: no-repeat;
    height: 400px;
+}
+.form-control::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: rgb(113, 88, 252);
 }
 .form-control{
   background-color: transparent;
