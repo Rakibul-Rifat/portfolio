@@ -105,6 +105,7 @@ background-image: url(https://www.pngall.com/wp-content/uploads/5/User-Profile-P
   background-position: center;
   backdrop-filter: blur(2.5px);
   background-repeat: no-repeat;
+   height: 400px;
 }
 .form-control{
   background-color: transparent;
