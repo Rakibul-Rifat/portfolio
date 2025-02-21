@@ -53,8 +53,8 @@ function getText(){
    slider.addEventListener("touchend", handleTouchEnd);
    slider.addEventListener("mouseover", stopAutoSlide);
    slider.addEventListener("mouseleave", startAutoSlide);
-   nextBtn.addEventListener("click", nextTestimonial);
-   prevBtn.addEventListener("click", prevTestimonial);
+  //  nextBtn.addEventListener("click", nextTestimonial);
+  //  prevBtn.addEventListener("click", prevTestimonial);
  }
  //* auto slide
  function startAutoSlide() {
@@ -116,3 +116,32 @@ function getText(){
  renderDotButtons();
  startAutoSlide();
  initApp();
+ 
+// <!-- ======this is image slider part====== -->
+const imageContainerEl = document.querySelector(".image-container");
+
+const prevEl = document.getElementById("prevv");
+const nextEl = document.getElementById("nextt");
+let x = 0;
+let timer;
+prevEl.addEventListener("click", () => {
+  x = x + 45;
+  clearTimeout(timer);
+  updateGallery();
+});
+nextEl.addEventListener("click", () => {
+  x = x - 45;
+  clearTimeout(timer);
+  updateGallery();
+});
+
+function updateGallery() {
+  imageContainerEl.style.transform = `perspective(1000px) rotateY(${x}deg)`;
+  timer = setTimeout(() => {
+    x = x - 45;
+    updateGallery();
+  }, 3000);
+}
+
+updateGallery();
+// <!-- ======this is image slider part====== -->
