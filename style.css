@@ -313,3 +313,23 @@ blockquote{
   background-size: cover;
 }
 /* <!-- ======this is image slider part====== --> */
+.navigationbar{
+  margin-bottom: 0;
+ color: aliceblue;
+place-content: center;
+ justify-content: space-around;
+ backdrop-filter: blur(15px);
+  margin: 20px;
+}
+.navicon{
+  width: 30px;
+  height: 30px;
+  color: #04AA6D;
+
+}
+@media only screen and (min-width:
+ 1000px) {
+.navv{
+display: none;
+}
+ }
