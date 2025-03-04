@@ -3,7 +3,11 @@
   font-weight: 400;
   font-style: normal;
 }
+.saira{
 
+  font-family: "Saira", serif;
+
+}
 .agdasima-bold {
   font-family: "Agdasima", serif;
   font-weight: 700;
@@ -15,7 +19,7 @@ html {
 *{
   margin: 0;
   border: 0;
-  font-family: Lucida Sans Unicode;
+  
 }
 body{
   background-color: rgb(6, 38, 72);
@@ -36,7 +40,7 @@ li a{
 }
 
   .hover:hover{
-    transform: scale(1.1,1.1);
+    transform: scale(0.9);
   }
      /***** fade*****/
   .fade-in {
@@ -56,7 +60,7 @@ li a{
       animation: spin 5s linear ;
     }
   @keyframes spin {
-    0% { transform: rotate(0deg); }
+    0% { transform: rotate(180deg); }
     100% { transform: rotate(360deg); }
   }
   /***** Slide right*****/
@@ -91,6 +95,7 @@ li a{
   height: 50px;
 }
 .brandlogo{
+  width: 60px;
   margin-left: 70px;
   
 }
@@ -122,7 +127,9 @@ background-image: url(https://www.pngall.com/wp-content/uploads/5/User-Profile-P
   min-width: 100%;
  }
  .brandlogo{
-  margin-left: 20px;
+  width: 40px;
+   height: 40px;
+  margin-left: 10px;
  }
  .profilepic{
   margin: 0;
