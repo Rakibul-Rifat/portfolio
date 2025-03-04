@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- jquery aniview plugin -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+<!-- jquery aniview plugin -->
+
   <meta name="theme-color" content="#062648" >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Cutive&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -17,22 +23,22 @@
 </head>
 <body >
   <div  class="container">
-    <nav class="navbar navbar-expand-lg bg-transparent fixed-top ">
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
       <div class="container-fluid">
-              <img class=" brandlogo fade-in" style="width: 40px; height: 40px" src="https://github.com/Rakibul-Rifat/portfolio/blob/main/logo%20(9).png?raw=true">
+       <img class=" brandlogo fade-in"  src="https://github.com/Rakibul-Rifat/portfolio/blob/main/logo%20(9).png?raw=true">
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span style="background-color: rgb(9, 255, 0);" class="navbar-toggler-icon rounded-2"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav  mb-2 mb-lg-0 ">
             <li class="nav-item">
-              <a    class="nav-link active me-5 text-white" aria-current="page" href="#home">Home</a>
+              <a    class="nav-link active me-5 text-white hover" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a   class="nav-link active me-5 text-white" aria-current="page" href="#about">About</a>
+              <a   class="nav-link active me-5 text-white hover " aria-current="page" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a  class="nav-link active customer text-white" aria-current="page" href="#projects">Projects</a>
+              <a  class="nav-link active customer text-white hover" aria-current="page" href="#projects">Projects</a>
             </li>
           <form class="d-flex" role="search">
             <button class="btn btn btnStartfree  " type="submit">Contact</button>
@@ -41,12 +47,14 @@
       </div>
     </nav>
     <!-- =======section1===== -->
-    <div id="home" class="section1 mt-2 ">
-      <div class="row text-center ">
+    <div id="home" class="section1 mt-2 " >
+     
+      <div class="row text-center aniview slow" data-av-animation="bounceInLeft">
            <div   class="col-sm-6 mt-5">
+          
             <h4 wb-animate-text="scale-in" class="text-white mt-5 ">Hello, It's me</h4>
-      <h2 style="font-family:Agdasima;" wb-animate-text="side-elastic-reveal" class="text-white  ">RAKIBUL RIFAT</h2>
-      <p class="text-white">And I'm a <span id="typing"></span></p>
+      <h2 wb-animate-text="side-elastic-reveal" class="text-white  ">RAKIBUL RIFAT</h2>
+      <p style="font-size: 12px;" class="text-white">And I'm a <span id="typing"></span></p>
       <br>
     <div class="fade-in">
       <img class="loader " style="width: 50px; height: 50px;" src="https://cdn.iconscout.com/icon/free/png-512/free-html-5-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175208.png?f=webp&w=512">
@@ -57,7 +65,7 @@
       
     </div>
       
-      <p class="text-white m-2">I’m a passionate Frontend Web Developer with expertise in HTML, CSS, JavaScript, and modern frameworks like React.js. I focus on building responsive, user-friendly websites with clean, efficient code. Passionate about creating seamless user experiences, I stay current with industry trends to deliver high-quality, functional web applications.</p>
+      <p class="text-white m-2 saira">I’m a passionate Frontend Web Developer with expertise in HTML, CSS, JavaScript, and modern frameworks like React.js. I focus on building responsive, user-friendly websites with clean, efficient code. Passionate about creating seamless user experiences, I stay current with industry trends to deliver high-quality, functional web applications.</p>
 <br>
 <button class="btn btn btnglow me-5 text-white"> Get a Quate</button><button class="btn btn btnglow text-white "> Contact To Me</button><br>
 <div class="mt-5">
@@ -74,13 +82,14 @@
       </div>
       </div>
   <!-- =======section2===== -->
-   <div id="about" class="section2">
+   <div id="about" id="message" class="section2 aniview slow"data-av-animation="animate__zoomIn">
     <div class="container">
       <div class="row">
            <div class="col-sm-6">
             <h2 wb-animate-text="bounce-in" id="section1" class="mt-5 text-white">About Me</h2>
-        <h4 class="text-white">Web designer and Frontend web developer</h4>
-          <p class="text-white">I'm a skilled Frontend Web Developer with expertise in creating responsive, user-friendly websites and web applications. I specialize in HTML, CSS, JavaScript, and modern frameworks like React.js and Vue.js. With a keen eye for detail, I focus on crafting clean, efficient code and delivering seamless user experiences across devices. I am committed to staying up-to-date with the latest web development trends and best practices. Whether building a brand new site or optimizing existing ones, I aim to bring functionality and creativity together to create beautiful, high-performing web applications. Let's turn your ideas into reality!</p>
+            
+        <h4 class="text-white ">Web designer and Frontend web developer</h4>
+          <p class="text-white saira">I'm a skilled Frontend Web Developer with expertise in creating responsive, user-friendly websites and web applications. I specialize in HTML, CSS, JavaScript, and modern frameworks like React.js and Vue.js. With a keen eye for detail, I focus on crafting clean, efficient code and delivering seamless user experiences across devices. I am committed to staying up-to-date with the latest web development trends and best practices. Whether building a brand new site or optimizing existing ones, I aim to bring functionality and creativity together to create beautiful, high-performing web applications. Let's turn your ideas into reality!</p>
           <button class="btn btn btnglow text-white" onclick="typeWriter()"> More About Me</button>
           <p class="text-white" id="demo"></p>
       <h4 class="text-white">Email - rakibul.rifat44@gmail.com</h4>
@@ -89,7 +98,7 @@
            <div class="col-sm-6 mt-5">
             <h2 wb-animate-text="fade-in-from-left" class="text-white" id="section2"> Contact To Me</h2>
         <h4 class="text-white">Let's work together</h4>
-        <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum adipisci excepturi in, voluptate tenetur laboriosam placeat voluptatum dolor similique earum quisquam accusantium exercitationem. Consectetur expedita illo autem obcaecati rem iusto.</p>
+        <p class="text-white saira">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum adipisci excepturi in, voluptate tenetur laboriosam placeat voluptatum dolor similique earum quisquam accusantium exercitationem. Consectetur expedita illo autem obcaecati rem iusto.</p>
                 <!--this part is simple user input form-->
         <input class="form-control " type="text" placeholder="Write your name" id="name"> <br>
       <input class="form-control" type="text" placeholder="Email or Number" id="email">
@@ -107,7 +116,7 @@
    </div>
    
 <!-- ======this is image slider part====== -->
-<div id="projects" class="imgSlider">
+<div id="projects" class="imgSlider aniview slow"data-av-animation="animate__rollIn">
 <h1 class="text-white">Recent projects I've worked on</h1>
   <br>
    <div class="image-container mt-5">
@@ -145,11 +154,11 @@
  
 
 <div class="section3">
-  <div class="container">
+  <div class="container aniview slow" data-av-animation="bounceInLeft">
     <div class="row">
          <div class="col-sm-6 mt-5">
           <h2 wb-animate-text="stagger-from-bottom" class="text-white">Details</h2>
-          <p class="text-white">As a Frontend Web Developer, my work involves creating the visual and interactive aspects of websites and web applications. Here's a breakdown of my key responsibilities:
+          <p class="text-white saira">As a Frontend Web Developer, my work involves creating the visual and interactive aspects of websites and web applications. Here's a breakdown of my key responsibilities:
 <br><br>
             1. *HTML/CSS*: Writing clean, semantic HTML for structure and CSS for layout and design, ensuring cross-browser compatibility and responsive design.
             <br>
@@ -176,7 +185,7 @@
                   <!-- Bootstrap Icon -->
                   <i class="bi bi-quote"></i>
         
-                  <blockquote class="text-white m-3">
+                  <blockquote class="text-white m-3 saira">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                     quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
                     nemo quo, molestias placeat sunt dignissimos nulla. Omnis
@@ -197,7 +206,7 @@
                   <!-- Bootstrap Icon -->
                   <i class="bi bi-quote"></i>
         
-                  <blockquote class="text-white m-3">
+                  <blockquote class="text-white m-3 saira">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                     quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
                     nemo quo, molestias placeat sunt dignissimos nulla. Omnis
@@ -219,7 +228,7 @@
                   <!-- Bootstrap Icon -->
                   <i class="bi bi-quote"></i>
         
-                  <blockquote class="text-white m-3">
+                  <blockquote class="text-white m-3 saira">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                     quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
                     nemo quo, molestias placeat sunt dignissimos nulla. Omnis
@@ -249,30 +258,26 @@
 <!-- =======footer====== -->
 <footer class="icon text-center m-3">
   <a> <span class="text-white" id="typed2"></span></a><br>
-  <a href="#"><box-icon class="bg-white rounded-2 " type='logo' name='facebook-square'></box-icon>
-  <a href="#"><box-icon class="bg-white rounded-2 " type='logo' name='github'></box-icon>
+  <box-icon class="bg-white rounded-2 " type='logo' name='facebook-square'></box-icon>
+  <box-icon class="bg-white rounded-2 " type='logo' name='github'></box-icon>
   <box-icon class="bg-white rounded-2 mt-3" type='logo' name='twitter'></box-icon>
   <box-icon class="bg-white rounded-2 mt-3" type='logo' name='instagram'></box-icon>
   <box-icon class="bg-white rounded-2 mt-3" type='logo' name='whatsapp'></box-icon>
       </footer>
 
-    
-<div class="navv mt-5">
+<!-- <div class="navv mt-5">
   <div  class="navigationbar good m-0 rounded-top-4 fixed-bottom d-flex">
-    <div><box-icon  class="mt-2 navicon " name='message-rounded-dots'></box-icon></div>
-    <div><box-icon class="mt-2 navicon"  name='search'></box-icon></div>
+    <div><a><box-icon  class="mt-2 navicon " name='message-rounded-dots'></box-icon></a></div>
+    <div><box-icon  href="#" class="mt-2 navicon"  name='search'></box-icon></div>
     <div><box-icon class="mt-2 navicon" id="home" name='home-alt-2'></box-icon></div>
     <div><box-icon class="mt-2 navicon" id="about"  name='user-circle'></box-icon></div>
   
   </div>
-</div>
-
-
-
+</div> -->
 
 
   </div>
   <script src="https://cdn.jsdelivr.net/gh/learyjk/animate-text@1.0.3/dist/wb-animateText.min.js"></script>
-  <script src="project.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
