@@ -145,3 +145,14 @@ function updateGallery() {
 
 updateGallery();
 // <!-- ======this is image slider part====== -->
+ // jquery aniview plugin=====================
+  var options = {
+    // delay the animation sequence until '100' pixels have come into view
+    animateThreshold: 100,
+// The frequency of which the user scrolling is 'tested'.
+scrollPollInterval: 20
+}
+$('.aniview').AniView({
+  animateClass: 'animate__animated'
+});
+
