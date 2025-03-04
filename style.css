@@ -19,7 +19,7 @@ html {
 *{
   margin: 0;
   border: 0;
-  
+    font-family: "Saira", serif;
 }
 body{
   background-color: rgb(6, 38, 72);
