@@ -19,10 +19,11 @@ html {
 *{
   margin: 0;
   border: 0;
-    font-family: "Saira", serif;
+  font-family: "Saira", serif;
+  
 }
 body{
-  background-color: rgb(6, 38, 72);
+  background-color: #07382d;
   /* background-image: url(https://cliply.co/wp-content/uploads/2019/06/401906190_ITS_COMPLICATED_400px.gif); */
 background-repeat: no-repeat;
 background-size: cover;
@@ -58,6 +59,15 @@ li a{
   .loader {
     text-align: center;
       animation: spin 5s linear ;
+    }
+  @keyframes spin {
+    0% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+  }
+   /***** spiner infinite*****/
+   .loader2 {
+    text-align: center;
+      animation: spin 5s linear infinite;
     }
   @keyframes spin {
     0% { transform: rotate(180deg); }
@@ -119,7 +129,7 @@ background-image: url(https://www.pngall.com/wp-content/uploads/5/User-Profile-P
 }
 .form-control{
   background-color: transparent;
-  border-color: blue;
+  border-color: rgba(2, 182, 11, 0.496);
 }
 @media only screen and (max-width:
  600px) {
@@ -162,9 +172,8 @@ blockquote{
 
 }
 .form-control::placeholder {
-  font-weight: bold;
   opacity: 0.5;
-  color: rgb(113, 88, 252);
+  color: rgb(88, 252, 115);
 }
 .testimonial-list {
   display: flex;
@@ -244,8 +253,11 @@ blockquote{
 
 .btnglow{
   border-radius: 1000px;
-  background-color: #04379637;
-  box-shadow: 0 4px 8px 0 rgba(2, 47, 106, 0.353), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #06392e;
+  box-shadow: 0 4px 8px 0 rgba(0, 4, 9, 0.163), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btnglow:hover {
+  background-color: #0f4d36;
 }
 /* <!-- ======this is image slider part====== --> */
 .imgSlider {
@@ -293,7 +305,7 @@ blockquote{
 .btnn {
   position: absolute;
   bottom: -80px;
-  background-color: slateblue;
+  background-color: #07382d;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -302,7 +314,7 @@ blockquote{
 }
 
 .btnn:hover {
-  filter: brightness(1.5);
+  background-color: #04AA6D;
 }
 
 #prev {
