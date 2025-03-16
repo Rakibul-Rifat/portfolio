@@ -1,3 +1,6 @@
+/* <div style="background-image: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-position: 10% 90%; background-size: cover; " id="home" class="section1 mt-5 " > */
+/* style="background-color: #1a1a1a93;" */
+
 .agdasima-regular {
   font-family: "Agdasima", serif;
   font-weight: 400;
@@ -22,13 +25,28 @@ html {
   font-family: "Saira", serif;
   
 }
-body{
-  background-color: #07382d;
-  /* background-image: url(https://cliply.co/wp-content/uploads/2019/06/401906190_ITS_COMPLICATED_400px.gif); */
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
+body {
+  position: relative;
+  background-color: #000000;
+  color: white; /* Text color */
 }
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://cliply.co/wp-content/uploads/2019/06/401906190_ITS_COMPLICATED_400px.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.3; /* Adjust opacity here */
+  z-index: -1; /* Ensure the image stays behind the content */
+}
+
+
 .navbar{
 backdrop-filter: blur(15px);
 }
