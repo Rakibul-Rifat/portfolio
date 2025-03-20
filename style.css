@@ -1,372 +1,74 @@
-/* <div style="background-image: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-position: 10% 90%; background-size: cover; " id="home" class="section1 mt-5 " > */
-/* style="background-color: #1a1a1a93;" */
-
-.agdasima-regular {
-  font-family: "Agdasima", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.saira{
-
-  font-family: "Saira", serif;
-
-}
-.agdasima-bold {
-  font-family: "Agdasima", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-html {
-  scroll-behavior: smooth;
-}
 *{
-  margin: 0;
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   border: 0;
-  font-family: "Saira", serif;
-  
+  margin: 0;
 }
-body {
-  position: relative;
-  background-color: #000000;
-  color: white; /* Text color */
+p{
+  font-family: sans-serif;
 }
+html{
+  scroll-behavior: smooth;
 
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(https://cliply.co/wp-content/uploads/2019/06/401906190_ITS_COMPLICATED_400px.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  opacity: 0.3; /* Adjust opacity here */
-  z-index: -1; /* Ensure the image stays behind the content */
+}
+.marquee {
+  display: flex;
+  overflow: hidden;
+  height: 10vh;
+  user-select: none;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+/*background-color: green;*/
+   /*transform: skewY(-3deg); */
+   /*transform: rotate(-5deg) translateY(-30px) translateX(50px);*/
 }
 
 
-.navbar{
-backdrop-filter: blur(15px);
-}
-.navbar-nav{
-  margin-left: auto;
-}
-li a{
-  color: aliceblue;
-  background-color: antiquewhite;
+.marquee:hover {
+  -webkit-text-stroke: 1.5px #fff;
+	text-stroke: 1.5px #fff;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	color: transparent;
+	transition: all 0.5s ease;
+	-webkit-font-smoothing: antialiased;
+	/*-moz-osx-font-smoothing: grayscale;*/
+
 }
 
-  .hover:hover{
-    transform: scale(0.9);
-  }
-     /***** fade*****/
-  .fade-in {
-    animation: fadeIn ease 8s;
-  }
-  @keyframes fadeIn{
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-   /***** spiner*****/
-  .loader {
-    text-align: center;
-      animation: spin 5s linear ;
-    }
-  @keyframes spin {
-    0% { transform: rotate(180deg); }
-    100% { transform: rotate(360deg); }
-  }
-   /***** spiner infinite*****/
-   .loader2 {
-    text-align: center;
-      animation: spin 5s linear infinite;
-    }
-  @keyframes spin {
-    0% { transform: rotate(180deg); }
-    100% { transform: rotate(360deg); }
-  }
-  /***** Slide right*****/
-.slide-right {
-  animation: 3s slide-right;
-}
-@keyframes slide-right {
-  from {
-    margin-right: 100%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
- /***** Slide Left *****/
- .slide-left {
-  animation: 3s slide-left;
-}
-@keyframes slide-left {
-  from {
-    margin-left: 100%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
-.customer{
-  margin-right: 100px;
-}
-.navbar-brand{
-  width: 55px;
-  height: 50px;
-}
-.brandlogo{
-  width: 60px;
-  margin-left: 70px;
-  
-}
-.textcolor{
-  color: rgb(3, 255, 15);
-}
-.btnStartfree{
-  background-color: rgb(3, 255, 15);
-  border-radius: 50px;
-  margin-right: 50px;
-  color: rgb(0, 0, 0);
-}
-.profilepic{
-background-image: url(https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Image.png);
-  background-size: 380px 300px;
-  background-position: center;
-  backdrop-filter: blur(2.5px);
-  background-repeat: no-repeat;
-  margin-top: 100px;
-  height: 300px;
-}
-.form-control{
-  background-color: transparent;
-  border-color: rgba(2, 182, 11, 0.496);
-}
-@media only screen and (max-width:
- 600px) {
- .testimonial-slider{
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
   min-width: 100%;
- }
- .brandlogo{
-  width: 40px;
-   height: 40px;
-  margin-left: 10px;
- }
- .profilepic{
-  margin: 0;
- }
- 
- }
-  /*this part is for testimonial slider animation*/
-.bodyy {
-  display: grid;
-  place-items: center;
-  height: 400px;
+  animation: scroll 15s linear infinite reverse;
 }
-.client {
-  text-align: center;
+
+.marquee__group span {
   color: white;
-}
-blockquote{
-  color: white;
-}
-.testimonial-slider {
-  backdrop-filter: blur(3.5px);
-  background-color: rgba(5, 2, 158, 0.112);
-  line-height: 20px;
-  text-align: center;
-  width: 80%;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  position: relative;
-  overflow: hidden;
+  font-size: 5vw;
+  font-weight: 800;
+  white-space: nowrap;
+  font-family: 'Syne', sans-serif !important;
+  /*text-transform: uppercase;*/
 
 }
-.form-control::placeholder {
-  opacity: 0.5;
-  color: rgb(88, 252, 115);
-}
-.testimonial-list {
-  display: flex;
-  overflow: hidden;
-}
-.testimonial {
-  background-image: url();
-  flex: 1 0 100%;
-  text-align: center;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.testimonial .bi-quote {
-  font-size: 2.5rem;
-  color: var(--sunglow);
-  opacity: 0.75;
-}
-.testimonial blockquote {
-  font-size: 1rem;
-}
-.user-info {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.user-info img {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-}
-.user-details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.user-details .name {
-  font-size: 1.15rem;
-  font-weight: 500;
-  color: var(--dark-cyan);
-}
-.user-details .company {
-  color: var(--muted-color);
-}
-/* dot navigation */
-.dots-container {
-  text-align: center;
-}
-.dot {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  border-radius: 5px;
-  margin-inline: 5px;
-  background-color: var(--dot-color);
-  transition: width 0.5s;
-  border: #04AA6D;
-}
-.dot.active {
-  width: 30px;
-  background-color: var(--paynes-gray);
-}
-@media (min-width: 768px) {
-  .testimonial .bi-quote {
-    font-size: 4rem;
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
   }
-  .testimonial blockquote {
-    font-size: 1.25rem;
-  }
-  .nav {
-    opacity: 0;
-  }
-  .testimonial-slider:hover .nav {
-    opacity: 1;
+  to {
+    transform: translateX(calc(-100% - 2rem));
   }
 }
 
-.btnglow{
-  border-radius: 1000px;
-  background-color: #06392e;
-  box-shadow: 0 4px 8px 0 rgba(0, 4, 9, 0.163), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+@media only screen and (min-width: 360px) {
+    .marquee__group span {
+        font-size: 6.5vw;
+    }
 }
-.btnglow:hover {
-  background-color: #0f4d36;
-}
-/* <!-- ======this is image slider part====== --> */
-.imgSlider {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
- 
-  justify-content: center;
-  overflow: hidden;
-}
-
-.image-container {
-  
-  position: relative;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-  transform: perspective(1000px) rotateY(0deg);
-  transition: transform 0.7s;
-}
-
-.image-container span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
-}
-
-.image-container span img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-
-.btn-container {
-  position: relative;
-  width: 80%;
-}
-
-.btnn {
-  position: absolute;
-  bottom: -80px;
-  background-color: #07382d;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btnn:hover {
-  background-color: #04AA6D;
-}
-
-#prev {
-  left: 20%;
-}
-
-#next {
-  right: 20%;
-}
-.image{
-  border-radius: 5px;
-  width: 200px;
-  height: 130px;
-  background-position: center;
-  background-size: cover;
-}
-/* <!-- ======this is image slider part====== --> */
-.navigationbar{
-  margin-bottom: 0;
- color: aliceblue;
-place-content: center;
- justify-content: space-around;
- backdrop-filter: blur(15px);
-  margin: 20px;
-}
-.navicon{
-  width: 30px;
-  height: 30px;
-  color: #04AA6D;
-
-}
-@media only screen and (min-width:
- 1000px) {
-.navv{
-display: none;
-}
- }
