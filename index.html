@@ -1,289 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="theme-color" content="rgb(0, 0, 0)" />
 <!-- jquery aniview plugin -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+<script src="https://unpkg.com/jquery-aniview@1.0.3/dist/jquery.aniview.js" integrity="sha384-uvboBeyPkVGldyoicVJST1JEAbxI2W0lG2fFOyGvahZrC4jWiv0vmryxw9NXIEn6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-aniview@1.0.4/dist/jquery.aniview.min.js"></script>
+
 <!-- jquery aniview plugin -->
-
-  <meta name="theme-color" content="#000000" >
-  <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Cutive&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rakibul_Rifat</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assests/tailwind.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rakibul</title>
 </head>
-<body >
-  <section style="background-image: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-position: 0% 100%; background-size: cover; " id="home" class=" fixed" >
-  <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
-    <div class="container-fluid">
-     <img class=" brandlogo fade-in"  src="https://github.com/Rakibul-Rifat/portfolio/blob/main/logo%20(9).png?raw=true">
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span style="background-color: rgb(9, 255, 0);" class="navbar-toggler-icon rounded-2"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav  mb-2 mb-lg-0 ">
-          <li class="nav-item">
-            <a    class="nav-link active me-5 text-white hover" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a   class="nav-link active me-5 text-white hover " aria-current="page" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-link active customer text-white hover" aria-current="page" href="#projects">Projects</a>
-          </li>
-        <form class="d-flex" role="search">
-          <button class="btn btn btnStartfree hover:text-white " type="submit">Contact</button>
-        </form>
-      </div>
+<body class="bg-black">
+<!-- Navbar -->
+  <nav class="bg-black text-white p-2 fixed w-full top-0 z-10 shadow-md lg:mx-20 ">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+       <img class="w-10  ml-2 lg:ml-0" src="https://github.com/Rakibul-Rifat/portfolio/blob/main/logo%20(9).png?raw=true">
+       <!-- Toggle Button (Hamburger Icon) -->
+       <button id="navbar-toggler" class="text-white md:hidden right-10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 mr-5">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+       </button>
+       <!-- Navbar Menu -->
+      <div  class="hidden md:flex text-sm space-x-8 ">
+      <a href="#home" class="hidden md:flex hover:text-gray-400">Home</a>
+      <a href="#project" class="hidden md:flex hover:text-gray-400">Projects</a>
+      <a style="margin-right: 160px;" href="#contact" class="hidden md:flex hover:text-gray-400 ">Contact</a>
     </div>
-  </nav>
-  <div  class="container ">
-   
-    <!-- =======section1===== -->
-    <div  id="home" class="section1 mt-2" >
-     
-      <div  class="row text-center aniview slow" data-av-animation="animate__fadeInDown" >
-           <div   class="col-sm-6 mt-5 ">
-          
-            <h4 wb-animate-text="scale-in" class="text-white mt-5 ">Hello, It's me</h4>
-      <h2 wb-animate-text="side-elastic-reveal" class="text-white  ">RAKIBUL RIFAT</h2>
-      <p style="font-size: 12px;" class="text-white">And I'm a <span id="typing"></span></p>
-      <br>
-    <div class="fade-in">
-      <img class="loader " style="width: 40px; height: 40px;" src="https://cdn.iconscout.com/icon/free/png-512/free-html-5-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175208.png?f=webp&w=512">
-      <img class="loader" style="width: 40px; height: 40px;"src="https://cdn.iconscout.com/icon/free/png-512/free-css-logo-icon-download-in-svg-png-gif-file-formats--logos-pack-icons-722685.png?f=webp&w=512">
-      <img class="loader " style="width: 40px; height: 40px;" src="https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg">
-      <img class="loader" style="width: 40px; height: 40px; text-align: center;
+  </div>
+<div id="navbar-menu" class="hidden grid md:hidden text-center mt-20">
+ <a href="#home" class="hover:text-gray-400">Home</a>
+  <a href="#project" class="hover:text-gray-400">Projects</a>
+  <a href="#contact" class=" hover:text-gray-400">Contact</a>
+</div>
+</nav>
+ <!-- Container -->
+ <div style="background-color: #1A1A1A;" class=" p-4 text-white lg:mx-20 bg-[url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-no-repeat lg:bg-[center_bottom_0rem] bg-[center_right_0rem] bg-cover bg-[auto] rounded-3xl aniview mt-20 "  data-av-animation="animate__backInDown">
+  <div class="lg:p-6 ">
+    <div class="lg:flex grid justify-between ">
+      <h2 class="text-xl">Hello, It's me </h2>
+      </div>
+       <h1 class="lg:text-6xl text-3xl mt-10 aniview"data-av-animation="animate__rotateIn">RAKIBUL RIFAT</h1>
+       <p>Front-end Web Developer</p>
+       <p class="mt-10  lg:mr-80 bg-[#00000080] rounded-2xl p-2">I’m a passionate Frontend Web Developer with expertise in HTML, CSS, JavaScript, Tailwind css, Bootstrap and modern frameworks like React.js. I focus on building responsive, user-friendly websites with clean, efficient code. Passionate about creating seamless user experiences, I stay current with industry trends to deliver high-quality, functional web applications..</p>
+      <button  class="bg-blue-700 aniview text-sm  hover:bg-blue-900 mt-20 rounded-3xl p-3"data-av-animation="animate__zoomInDown"><a class="text-decoration-none text-white " href="https://drive.google.com/file/d/11AloyKUYJEd17TJQLV_vhPNbUnl4J0W7/view?usp=drive_link">Download My Resume</a></button>
+  </div>
+</div>
+<!-- =====brandlogo====== -->
+<div class="lg:mx-20 my-10 " data-av-animation="animate__backInUp">
+  <div class="marquee">
+    <div class="marquee__group lg:mr-40">
+      <span><img class="loader " style="width: 40px; height: 40px;" src="https://cdn.iconscout.com/icon/free/png-512/free-html-5-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175208.png?f=webp&w=512"></span>
+     <span><img class="loader" style="width: 40px; height: 40px;"src="https://cdn.iconscout.com/icon/free/png-512/free-css-logo-icon-download-in-svg-png-gif-file-formats--logos-pack-icons-722685.png?f=webp&w=512"></span>
+     <span><img class="loader " style="width: 40px; height: 40px;" src="https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg"></span>
+     <span>  <img class="loader" style="width: 40px; height: 40px; text-align: center;
       animation: spin 5s linear infinite;
-    "src="https://cdn.iconscout.com/icon/free/png-512/free-react-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175109.png?f=webp&w=512">
-      <img class="loader " style="width: 40px; height: 40px;" src="https://cdn.iconscout.com/icon/free/png-512/free-jquery-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175153.png?f=webp&w=512">
-      <img class="loader" style="width: 40px; height: 40px;;"src="https://cdn.iconscout.com/icon/free/png-512/free-bootstrap-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-language-pack-logos-icons-1175203.png?f=webp&w=512">
-      <img class="loader" style="width: 35px; height: 35px;;"src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--brand-company-business-brands-pack-logos-icons-2284965.png?f=webp&w=512">
-     
-     
+    "src="https://cdn.iconscout.com/icon/free/png-512/free-react-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175109.png?f=webp&w=512"></span>
+     <span>   <img class="loader " style="width: 40px; height: 40px;" src="https://cdn.iconscout.com/icon/free/png-512/free-jquery-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175153.png?f=webp&w=512"></span>
+     <span>  <img class="loader" style="width: 35px; height: 35px;;"src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--brand-company-business-brands-pack-logos-icons-2284965.png?f=webp&w=512"></span>
     </div>
-      
-      <p style="background-color: #1a1a1a93;"  class="text-white p-3 saira rounded-3 mt-3 aniview"data-av-animation="animate__rotateIn">I’m a passionate Frontend Web Developer with expertise in HTML, CSS, JavaScript, Tailwind css, Bootstrap and modern frameworks like React.js. I focus on building responsive, user-friendly websites with clean, efficient code. Passionate about creating seamless user experiences, I stay current with industry trends to deliver high-quality, functional web applications.</p>
-<br>
-<button class="btn btn btnglow text-white "> Contact To Me</button><br>
-<button  class="btn btnglow text-white aniview  mt-3"data-av-animation="animate__zoomInDown"><a class="text-decoration-none text-white " href="https://drive.google.com/file/d/11AloyKUYJEd17TJQLV_vhPNbUnl4J0W7/view?usp=drive_link">Download My Resume</a></button>
-<div class="mt-5 pb-3">
-  <box-icon class="bg-white rounded-2" type='logo' name='facebook-square'></box-icon>
-  <box-icon class="bg-white rounded-2" type='logo' name='github'></box-icon>
-<box-icon class="bg-white rounded-2" type='logo' name='twitter'></box-icon>
-  <box-icon class="bg-white rounded-2" type='logo' name='instagram'></box-icon>
-  <box-icon class="bg-white rounded-2" type='logo' name='whatsapp'></box-icon>
+  <div class="marquee__group" aria-hidden="true">
+    <span><img class="loader " style="width: 40px; height: 40px;" src="https://cdn.iconscout.com/icon/free/png-512/free-html-5-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175208.png?f=webp&w=512"></span>
+    <span><img class="loader" style="width: 40px; height: 40px;"src="https://cdn.iconscout.com/icon/free/png-512/free-css-logo-icon-download-in-svg-png-gif-file-formats--logos-pack-icons-722685.png?f=webp&w=512"></span>
+    <span><img class="loader " style="width: 40px; height: 40px;" src="https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg"></span>
+    <span>  <img class="loader" style="width: 40px; height: 40px; text-align: center;
+     animation: spin 5s linear infinite;
+   "src="https://cdn.iconscout.com/icon/free/png-512/free-react-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175109.png?f=webp&w=512"></span>
+    <span>   <img class="loader " style="width: 40px; height: 40px;" src="https://cdn.iconscout.com/icon/free/png-512/free-jquery-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175153.png?f=webp&w=512"></span>
+    <span>  <img class="loader " style="width: 35px; height: 35px;;"src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--brand-company-business-brands-pack-logos-icons-2284965.png?f=webp&w=512"></span>
+    </div>
+  </div>
 </div>
-           </div>
-           <div class="col-sm-6  profilepic mb-5 visually-hidden"  >
-          
-           </div>
+<!-- =======speakers====== -->
+<div id="speakers"  class=" lg:mx-20 grid grid-cols-1 sm:grid-cols-2 gap-4   aniview"data-av-animation="animate__fadeInBottomRight" >
+  <div  style="background-color: #0147FF;" class=" p-4 text-white rounded-3xl">
+    <h2  class="text-xl p-5">Languages</h2>
+    <div class="flex justify-between mt-5 p-4">
+      <img style=" width: 76px; height: 76px; " class="mr-10 mt-5" src="assests/Group 2.png">
+      <p class="p-4">I am a skilled frontend web developer with expertise in HTML, CSS, and JavaScript. I create responsive, interactive websites and focus on delivering clean, efficient, and user-friendly web experiences.</p>
       </div>
-      </div>
-    </section>
-  <!-- =======section2===== -->
-   <div  id="about" id="message" class="section2 rounded border-3 mt-2 container"data-av-animation="animate__rotateIn">
-    <div class="container">
-      <div  class="row ">
-           <div class="col-sm-6 ">
-            <h2 wb-animate-text="bounce-in" id="section1" class="mt-2 text-white">About Me</h2>
-            
-        <h4 class="text-white ">Web designer and Frontend web developer</h4>
-          <p class="text-white saira aniview"data-av-animation="animate__fadeInRight">I'm a skilled Frontend Web Developer with expertise in creating responsive, user-friendly websites and web applications. I specialize in HTML, CSS, JavaScript, and modern frameworks like React.js  With a keen eye for detail, I focus on crafting clean, efficient code and delivering seamless user experiences across devices. I am committed to staying up-to-date with the latest web development trends and best practices. Whether building a brand new site or optimizing existing ones, I aim to bring functionality and creativity together to create beautiful, high-performing web applications. Let's turn your ideas into reality!</p>
-          <button class="btn btn btnglow text-white" onclick="typeWriter()"> More About Me</button>
-          <p class="text-white" id="demo"></p>
-      <h4 class="text-white">Email - rakibul.rifat44@gmail.com</h4>
-      <h4 class="text-white">Phone No - 01618085195</h4>
-           </div>
-           <div  class="col-sm-6 ">
-            <h2 wb-animate-text="fade-in-from-left" class="text-white mt-2" id="section2"> Contact To Me</h2>
-        <h4 class="text-white">Let's work together</h4>
-        <p class="text-white saira aniview"data-av-animation="animate__fadeInLeft">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum adipisci excepturi in, voluptate tenetur laboriosam placeat voluptatum dolor similique earum quisquam accusantium exercitationem. Consectetur expedita illo autem obcaecati rem iusto.</p>
-                <!--this part is simple user input form-->
-        <input class="form-control " type="text" placeholder="Write your name" id="name"> <br>
-      <input class="form-control" type="text" placeholder="Email or Number" id="email">
-      <br>
-      <input class="form-control" type="text" placeholder="write subject" id="subject">
-      <br>
-      <input class="form-control" class="message" type="text" placeholder="write message" id="message">
-      <br><br>
-      <button class="btn btn btnglow text-white" onclick='getText()' type="button">Submit</button>
-      <br>
-      <p class="text-success" id ='demo2' ></p>
-           </div>
-      </div>
-      </div>
+       <div class="flex justify-between mt-10 p-4">
+      <div class="mt-4">
+     </div>
    </div>
-   
-<!-- ======this is image slider part====== -->
-<div  id="projects" class="imgSlider mt-2">
-<h1 class="text-white">Recent projects I've worked on</h1>
-  <br>
-   <div class="image-container mt-5">
-     <span style="--i: 1">
-       <img class="image" src="https://github.com/Rakibul-Rifat/portfolio/blob/main/jadoootravel.netlify.app_%20(1).png?raw=true" />
-     </span>
-     <span style="--i: 2">
-       <img class="image" src="https://github.com/Rakibul-Rifat/portfolio/blob/main/jadoootravel.netlify.app_%20(2).png?raw=true" />
-     </span>
-     <span style="--i: 3">
-       <img class="image" src="https://github.com/Rakibul-Rifat/portfolio/blob/main/jadoootravel.netlify.app_.png?raw=true" />
-     </span>
-     <span style="--i: 4">
-       <img class="image" src="https://github.com/Rakibul-Rifat/portfolio/blob/main/recipeitemss.netlify.app_%20(1).png?raw=true" />
-     </span>
-     <span style="--i: 5">
-       <img class="image" src="https://github.com/Rakibul-Rifat/portfolio/blob/main/recipeitemss.netlify.app_%20(2).png?raw=true" />
-     </span>
-     <span style="--i: 6">
-       <img class="image" src="https://github.com/Rakibul-Rifat/portfolio/blob/main/recipeitemss.netlify.app_%20(3).png?raw=true" />
-     </span>
-     <span style="--i: 7">
-       <img class="image" src="https://github.com/Rakibul-Rifat/portfolio/blob/main/recipeitemss.netlify.app_%20(4).png?raw=true" />
-     </span>
-     <span style="--i: 8">
-       <img class="image" src="https://github.com/Rakibul-Rifat/portfolio/blob/main/recipeitemss.netlify.app_.png?raw=true" />
-     </span>
-   </div>
-   <div class="btn-container mb-2">
-     <button class="btn btn btnglow text-white" id="prevv">Prev</button>
-     <button class="btn btn btnglow text-white " id="nextt">Next</button>
-   </div> 
+  </div>
+<div class=" text-white ">
+    <div class=" sm:grid-cols-2 ">
+      <div style="background-color: #0147FF;" class=" p-10 text-white rounded-3xl ">
+        <h2 class="text-xl">Frameworks/Libraries</h2>
+        <p class="text-xs my-10">I am proficient in React, Tailwind CSS, Bootstrap, jQuery, and Anivew. I build dynamic, responsive websites with modern frameworks and libraries, ensuring high performance and excellent user experiences.</p>
+       </div>
+       <div class="bg-gray-200 p-10 text-black rounded-3xl mt-4">
+        <h2 class="text-xl">Tools & Platforms</h2>
+        <p class="text-xs my-10 ">I am experienced with tools and platforms like Git, GitHub, VS Code, Figma, and npm. These tools help streamline development workflows, version control, and create visually appealing, responsive web designs..</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===========agenda======== -->
+<div class="flex justify-between text-white lg:mx-20 mx-10 lg:flex grid ">
+  <h1 class="lg:text-8xl text-3xl mt-10 aniview" data-av-animation="animate__fadeInLeft">Experience & Achievements</h1>
+  <h1 class="text-xs my-10 aniview "data-av-animation="animate__fadeInRight">Web designer and Frontend web developer</h1>
+</div>
+<div id="shedule" style="background-color: #1A1A1A;" class=" p-4 text-white lg:mx-20  rounded-3xl flex justify-between bg-[url(/assests/b6.png)] bg-left-bottom bg-no-repeat rounded-3xl aniview"data-av-animation="animate__backInUp">
+  <div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 mt-10 ">
+      <div class="b p-4 text-white">
+        <h2 class="text-xl">Professional Experience</h2>
+        </div>
+         <div class=" p-4 text-white aniview"data-av-animation="animate__fadeInRight">
+        <h2 class="text-3xl">AI Innovations & Trends</h2>
+        <p class="mt-5">I have successfully built responsive, user-friendly websites, collaborating with teams to deliver high-quality projects using HTML, CSS, JavaScript, and React..</p>
+    </div>
  </div>
-   <!-- ======this is image slider part====== -->
- 
-
-<div class="section3">
-  <div class="container " data-av-animation="animate__flipInY">
-    <div   class="row rounded-3 container">
-         <div  class="col-sm-6 mt-5 rounded border-3">
-          <h2 wb-animate-text="stagger-from-bottom" class="text-white mt-2">Details</h2>
-          <p class="text-white saira aniview" data-av-animation="animate__fadeInRight">As a Frontend Web Developer, my work involves creating the visual and interactive aspects of websites and web applications. Here's a breakdown of my key responsibilities:
-<br><br>
-            1. *HTML/CSS*: Writing clean, semantic HTML for structure and CSS for layout and design, ensuring cross-browser compatibility and responsive design.
-            <br>
-            2. *JavaScript*: Implementing interactive features using JavaScript, enhancing user experience with dynamic content and behavior.
-            <br>
-            3. *Frontend Frameworks*: Utilizing frameworks like React.js to build scalable and efficient user interfaces.
-            <br>
-            4. *Responsive Design*: Ensuring the website works seamlessly across various screen sizes using tools like Flexbox and CSS Grid.
-            <br>
-           
-            5. *Performance Optimization*: Optimizing front-end performance by reducing load times and improving overall site efficiency.
-            <br>
-            6. *Collaboration*: Working closely with designers, back-end developers, and stakeholders to ensure the website aligns with project requirements and branding.
-            <br><br>
-            My goal is to deliver clean, functional, and visually appealing websites that provide an excellent user experience.</p>
-        <!-- =======testimonial===== -->
-         </div>
-         <div class="col-sm-6 ">
-          <div class="bodyy w-auto  mt-lg-5">
-            <div class="testimonial-slider w-auto mt-lg-4">
-              <h4 wb-animate-text="scale-in" class="client mt-3"> What Our Clients Say</h4>
-              <div class="testimonial-list" role="region" aria-label="Testimonials">
-                <div class="testimonial">
-                  <!-- Bootstrap Icon -->
-                  <i class="bi bi-quote"></i>
-        
-                  <blockquote class="text-white m-3 saira">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                    quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
-                    nemo quo, molestias placeat sunt dignissimos nulla. Omnis
-                    consectetur aliquam ab incidunt!
-                  </blockquote>
-        
-                  <!-- User Info -->
-                  <div class="user-info">
-                    <img src="https://placehold.co/48?text=1" alt="" />
-                    <div class="user-details">
-                      <p class="text-white">John Doe</p>
-                      <p class="text-white">CEO, Company XYZ</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- /Testimonial -->
-                <div class="testimonial">
-                  <!-- Bootstrap Icon -->
-                  <i class="bi bi-quote"></i>
-        
-                  <blockquote class="text-white m-3 saira">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                    quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
-                    nemo quo, molestias placeat sunt dignissimos nulla. Omnis
-                    consectetur aliquam ab incidunt!
-                  </blockquote>
-        
-                  <!-- User Info -->
-                  <div class="user-info">
-                    <img src="https://placehold.co/48?text=2" alt="" />
-                    <div class="user-details">
-                      <p class="text-white" >John Doe</p>
-                      <p class="text-white" >CEO, Company XYZ</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- /Testimonial -->
-                <!-- Testimonial -->
-                <div class="testimonial">
-                  <!-- Bootstrap Icon -->
-                  <i class="bi bi-quote"></i>
-        
-                  <blockquote class="text-white m-3 saira">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                    quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
-                    nemo quo, molestias placeat sunt dignissimos nulla. Omnis
-                    consectetur aliquam ab incidunt!
-                  </blockquote>
-        
-                  <!-- User Info -->
-                  <div class="user-info">
-                    <img src="profile_pic.jpg" alt="pic" />
-                    <div class="user-details">
-                      
-                      <p class="text-white" >John Doe</p>
-                      <p class="text-white">CEO, Company XYZ</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- /Testimonial -->
-              </div>
-              <!-- /Testimonial List -->
-              <!-- Dot Navigation -->
-              <div class="dots-container"></div>
-              <!-- /Dot Navigation -->
-            </div>
-            </div>
-</div>
-</div>
-<!-- =======footer====== -->
-<footer  class="icon text-center m-3">
-  <a> <span class="text-white" id="typed2"></span></a><br>
-  <box-icon class="bg-white rounded-2 " type='logo' name='facebook-square'></box-icon>
-  <box-icon class="bg-white rounded-2 " type='logo' name='github'></box-icon>
-  <box-icon class="bg-white rounded-2 mt-3" type='logo' name='twitter'></box-icon>
-  <box-icon class="bg-white rounded-2 mt-3" type='logo' name='instagram'></box-icon>
-  <box-icon class="bg-white rounded-2 mt-3" type='logo' name='whatsapp'></box-icon>
-      </footer>
-
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 mt-10">
+  <div class="b p-4 text-white">
+   <h2 class="text-xl">Certifications</h2>
   </div>
-  <div class="navv mt-5">
-    <div  class="navigationbar good m-0 rounded-top-4 fixed-bottom d-flex">
-      <div><a><box-icon  class="mt-2 navicon " name='message-rounded-dots'></box-icon></a></div>
-      <div><box-icon  href="#" class="mt-2 navicon"  name='search'></box-icon></div>
-      <div><box-icon class="mt-2 navicon" id="home" name='home-alt-2'></box-icon></div>
-      <div><box-icon class="mt-2 navicon" id="about"  name='user-circle'></box-icon></div>
+<div class=" p-4 text-white aniview"data-av-animation="animate__fadeInRight">
+    <h2 class="text-3xl">AI Innovations & Trends</h2>
+    <p class="mt-5">The summit kicks off with a keynote, expert panels, and discussions on AI’s impact, ethics, and automation. Hands-on workshops and a networking event wrap up the day.</p>
+  </div>
+</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 mt-10">
+      <div class="b p-4 text-white">
+      <h2 class="text-xl">Awards or Recognition</h2>
+    </div>
+      <div class=" p-4 text-white aniview"data-av-animation="animate__fadeInRight">
+        <h2 class="text-3xl">AI Innovations & Trends</h2>
+        <p class="mt-5">The summit kicks off with a keynote, expert panels, and discussions on AI’s impact, ethics, and automation. Hands-on workshops and a networking event wrap up the day.</p>
+        <img class="mt-5" src="assests/Button (2).png">
+      </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/gh/learyjk/animate-text@1.0.3/dist/wb-animateText.min.js"></script>
+</div>
+<!-- =======keynote speakers====== -->
+<div id="project" class="flex justify-between text-white lg:mx-20 mx-10 lg:flex grid ">
+  <h1 class="lg:text-5xl text-xl mt-10 aniview" data-av-animation="animate__fadeInLeft">Recent Project I have worked on</h1>
+  <h1 class="text-xs my-10 aniview"data-av-animation="animate__fadeInRight">Projects Showcase</h1>
+</div>
+<div class="lg:mt-10 aniview" data-av-animation="animate__zoomIn">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:mx-20 gap-4 ">
+    <div class="text-white">
+      <div   class="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/75a890c621c7be12d702d9f65c91756b-1742060858963/Screenshot_15-3-2025_225447_localhost.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInRight">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://cafe-street-shop.netlify.app/" class="hidden md:flex hover:text-gray-400">Live demo</a></button>
+        </div>
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/75a890c621c7be12d702d9f65c91756b-1742060858963/Screenshot_15-3-2025_225447_localhost.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInLeft">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://cafe-street-shop.netlify.app/" class="hidden md:flex hover:text-gray-400">Live demo</a></button>
+        </div>
+   </div>
+</div>
+    <div class="text-white">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/75a890c621c7be12d702d9f65c91756b-1742060858963/Screenshot_15-3-2025_225447_localhost.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInRight">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://cafe-street-shop.netlify.app/" class="hidden md:flex hover:text-gray-400">Live demo</a></button>
+        </div>
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/75a890c621c7be12d702d9f65c91756b-1742060858963/Screenshot_15-3-2025_225447_localhost.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInLeft">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://cafe-street-shop.netlify.app/" class="hidden md:flex hover:text-gray-400">Live demo</a></button>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="mt-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:mx-20 gap-4">
+    <div class="text-white">
+      <div style=""  class="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/75a890c621c7be12d702d9f65c91756b-1742060858963/Screenshot_15-3-2025_225447_localhost.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInRight">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://cafe-street-shop.netlify.app/" class="hidden md:flex hover:text-gray-400">Live demo</a></button>
+        </div>
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/75a890c621c7be12d702d9f65c91756b-1742060858963/Screenshot_15-3-2025_225447_localhost.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInLeft">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://cafe-street-shop.netlify.app/" class="hidden md:flex hover:text-gray-400">Live demo</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="text-white">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/75a890c621c7be12d702d9f65c91756b-1742060858963/Screenshot_15-3-2025_225447_localhost.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInRight">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://cafe-street-shop.netlify.app/" class="hidden md:flex hover:text-gray-400">Live demo</a></button>
+        </div>
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/75a890c621c7be12d702d9f65c91756b-1742060858963/Screenshot_15-3-2025_225447_localhost.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInLeft">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://cafe-street-shop.netlify.app/" class="hidden md:flex hover:text-gray-400">Live demo</a></button>
+        </div>
+    </div>
+  </div>
+</div>
+<button class="lg:mx-20 m-10 text-white text-left border rounded-3xl p-2 aniview"data-av-animation="animate__backInUp">And more <i class='bx bxs-right-top-arrow-circle '></i></button>
+<!-- =========why attened======= -->
+<div id="venue" class="flex justify-between text-white lg:mx-20 mx-10 lg:flex grid aniviw" animate__tada>
+  <h1 class="lg:text-8xl text-3xl mt-10 inline-flex aniview" data-av-animation="animate__fadeInLeft">Why you will choose me?</h1>
+  <h1 class="text-xs my-10 aniview "data-av-animation="animate__fadeInRight">Discover why Next-Gen AI Summit is the must-attend event for AI professionals, innovators, and industry leaders.</h1>
+</div>
+<!-- =================== -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:mx-20 aniview mt-5"data-av-animation="animate__backInUp">
+    <div style="background-color: #1A1A1A; width: 100%; " class=" p-4 text-white  bg-[url(assests//B2.png)] bg-no-repeat bg-[auto_300px] rounded-3xl bg-contain bg-left-bottom">
+      <h2 class="text-xl">Expertise in Frontend Technologies</h2>
+      <p class="lg:ml-60 ml-0 my-10">I have strong skills in HTML, CSS, JavaScript, and modern frameworks like React, enabling the creation of dynamic websites.</p>
+    </div>
+    <div style="background-color: #1A1A1A; width: 100%; " class=" p-4 text-white  bg-[url(assests//B4.png)] bg-no-repeat bg-[auto_300px] rounded-3xl bg-contain bg-left-bottom aniview"data-av-animation="animate__backInUp">
+      <h2 class="text-xl">Responsive and User-Centric Design</h2>
+      <p class="lg:ml-60 ml-0 my-10">I prioritize responsive design and user experience, ensuring websites work seamlessly across all devices and provide smooth interactions.</p>
+    </div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:mx-20 mt-4">
+  <div style="background-color: #1A1A1A; width: 100%; " class=" p-4 text-white  bg-[url(assests/B3.png)] bg-no-repeat bg-[auto_300px] rounded-3xl bg-contain bg-right-bottom aniview"data-av-animation="animate__backInUp">
+    <h2 class="text-xl">Efficient Development Process</h2>
+    <p class="lg:ml-60 ml-0 my-10">Using tools like Git, GitHub, and VS Code, I maintain efficient development workflows, version control, and consistent code quality.</p>
+  </div>
+  <div style="background-color: #1A1A1A; width: 100%; " class=" p-4 text-white  bg-[url(assests//B5.png)] bg-no-repeat bg-[auto_300px] rounded-3xl bg-contain bg-right-bottom">
+    <h2 class="text-xl">Passion for Innovation and Learning</h2>
+    <p class="lg:ml-60 ml-0 my-10">I’m always learning new technologies and techniques to stay up-to-date with the latest frontend trends and deliver cutting-edge solutions.</p>
+  </div>
+</div>
+<!-- ============register now========= -->
+<div class="flex justify-between text-white lg:mx-20 mx-10 lg:flex grid ">
+  <h1 class="lg:text-8xl text-3xl mt-10 inline-flex aniview" data-av-animation="animate__backInUp" >CONTACT NOW</h1>
+  <h1 class="text-xs my-10 aniview "data-av-animation="animate__fadeInRight">Secure your spot at the Next-Gen AI Summit 2052 and join the future of AI innovation.</h1>
+</div>
+ <!-- Container -->
+ <div id="tickets" style="background-color: #1A1A1A;" class=" p-4 text-white lg:mx-20 bg-[url(assests/B7.png)] bg-no-repeat bg-right-bottom bg-[auto_300px] rounded-3xl aniview"data-av-animation="animate__backInUp">
+  <div class="p-6 mt-5">
+   <p>Early Bird Pricing Ends In:</p>
+   <h1 class="lg:text-8xl text-5xl">12:05:30</h1>
+  <div class="flex lg:text-2xl text-sm justify-between mt-5 lg:max-w-xl lg:max-w-xl"> <p>Days</p>
+    <p>Hours</p>
+    <p class="mr-40 ">Minutes</p>
+  </div>
+  </div>
+</div>
+<!-- ============contact us======== -->
+<div style="background-color: #1A1A1A;" class="lg:mx-20 grid grid-cols-1 sm:grid-cols-2 gap-4 rounded-3xl mt-10 aniview "data-av-animation="animate__backInUp">
+  <div class=" p-10 text-white">
+    <h2 class="text-xl ">I'm here to connect and assist you</h2>
+    <p class="mt-5">Have questions about my services? Need help with frontend development or project? I'm ready to assist you.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
+      <div id="contact" class="p-4 text-white">
+        <h2 class="text-xl ">Contact Me</h2>
+        <p>whatsapp +8801618085195</p>
+        <p>email - rakibul.rifat44@gmail.com</p>
+      </div>
+      <div class=" p-4 text-white">
+        <h2 class="text-xl">Location</h2>
+        <p>Chattogram , Bangladesh</p>
+        <h2 class="text-xl mt-5">Follow me</h2>
+        <p><i class='bx bxl-facebook ' ></i><i class='bx bxl-linkedin-square ml-2' ></i><i class='bx bxl-instagram ml-2' ></i><i class='bx bxl-youtube ml-2' ></i></p>
+      </div>
+    </div>
+  </div>
+  <!-- =========get in touch====== -->
+  <div style="background-color: #00000019;" class="p-4 lg:p-10 text-white grid rounded-3xl">
+    <h2 class="text-3xl ">get in touch</h2>
+    <p>Reach out with inquiries about my services and details.</p>
+    <input type="text" placeholder="Name" class="border-b-2 border-black focus:outline-none focus:border-blue-500  placeholder-gray-500 p-2 bg-sky-500/0">
+    <input type="text" placeholder="Email" class="border-b-2 border-black focus:outline-none focus:border-blue-500  placeholder-gray-500 p-2 bg-sky-500/0">
+    <input type="text" placeholder="Subject" class="border-b-2 border-black focus:outline-none focus:border-blue-500  placeholder-gray-500 p-2 bg-sky-500/0">
+    <input type="text" placeholder="message" class="border-b-2 border-black focus:outline-none focus:border-blue-500  placeholder-gray-500 p-2 bg-sky-500/0">
+    <button class="bg-blue-800 hover:bg-green-500 text-white p-4 rounded-3xl mt-5">Send message</button>
+  </div>
+</div>
+<!-- ========footer======= -->
+<div style="background-color: #1A1A1A;" class="lg:mx-20 grid grid-cols-1 sm:grid-cols-2 gap-4 rounded-3xl mt-10 mb-10 aniview "data-av-animation="animate__rollIn">
+<div class=" text-white p-10">
+  <h2 class="text-2xl ">Find me in social platform</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 mt-10">
+    <div class="p-4 text-white">
+      <h2 class="text-xl ">Facebook</h2>
+      <h2 class="text-xl mt-2">Istagram</h2>
+      <h2 class="text-xl mt-2">Youtube</h2>
+      <h2 class="text-xl mt-2">Whatsakpp</h2>
+      <h2 class="text-xl mt-2">Linkedin</h2>
+      <h2 class="text-xl mt-2">google</h2>
+    </div>
+    <div class=" p-4 text-white">
+      <h2 class="text-xl ">Terms & Conditions</h2>
+      <h2 class="text-xl mt-2">Privacy Policy</h2>
+      <h2 class="text-xl mt-2">Cookie Policy</h2>
+    </div>
+  </div>
+</div>
+<!-- ===================== -->
+<div class="bg-blue-900 lg:p-10 p-2  text-black grid rounded-3xl">
+  <div class=" p-4 text-white aniview"data-av-animation="animate__backInDown">
+    <h2 class="text-xl ">Stay updated</h2>
+    <p class="mt-5">Subscribe for event updates & exclusive content.</p>
+    <input type="text" placeholder="Email" class="border-b-2 border-white focus:outline-none focus:border-blue-500  placeholder-gray-500 p-2 bg-sky-500/0">
+<br>
+    <button class="bg-blue-800 hover:bg-green-500 text-white p-4 rounded-3xl mt-5">Stay updated</button>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
+      <div class="p-4 text-white">
+        <h2 class="text-xl ">Follow me</h2>
+        <p><i class='bx bxl-facebook ' ></i><i class='bx bxl-linkedin-square ml-2' ></i><i class='bx bxl-instagram ml-2' ></i><i class='bx bxl-youtube ml-2' ></i></p>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
   <script src="project.js"></script>
+  <script src="./assests/jquery.aniview.js"></script>
 </body>
 </html>
